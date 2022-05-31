@@ -40,10 +40,11 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  const elemento = document.getElementById("navigation");
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    elemento.classList.add("scroll");
   } else {
-    navigation.classList.remove('scroll')
+    elemento.classList.remove("scroll");
   }
 }
 
